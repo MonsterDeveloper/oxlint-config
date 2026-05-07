@@ -1,0 +1,32 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "import"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "complexity": ["error", { "max": 18 }],
+    "no-console": ["error", { "allow": ["info"] }],
+    "max-params": ["error", { "max": 3 }],
+    "no-empty": "error",
+    "curly": ["error", "all"],
+    "no-undef": "error",
+    "object-shorthand": ["error", "always"],
+    "operator-assignment": ["error", "always"],
+    "require-await": "error",
+    "yoda": "error",
+    "no-unused-private-class-members": "error",
+
+    "typescript/no-explicit-any": "error",
+    "typescript/array-type": ["error", { "default": "array-simple" }],
+    "typescript/prefer-for-of": "error",
+
+    "import/no-commonjs": "error",
+    "import/no-default-export": "error",
+
+    "unicorn/no-document-cookie": "error",
+    "unicorn/no-useless-undefined": "error",
+    "unicorn/prefer-date-now": "error",
+    "unicorn/require-number-to-fixed-digits-argument": "error"
+  }
+}

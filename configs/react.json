@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "jsx-a11y"],
+  "rules": {
+    "react/exhaustive-deps": "error",
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-no-useless-fragment": "error",
+    "react/rules-of-hooks": "error",
+    "react/display-name": "error",
+    "react/no-array-index-key": "error",
+
+    "jsx-a11y/label-has-associated-control": "error"
+  }
+}
