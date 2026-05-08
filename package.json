@@ -14,22 +14,24 @@
   "author": "Andrei Bobkov <me@ctoofeverything.dev>",
   "scripts": {
     "update": "bunx npm-check-updates -ui --reject bun",
-    "check": "oxlint"
+    "format": "oxfmt"
+  },
+  "publishConfig": {
+    "provenance": true
   },
   "files": [
     "configs/**"
   ],
   "exports": {
     "./base": "./configs/base.json",
-     "./react": "./configs/react.json"
+    "./react": "./configs/react.json"
   },
   "peerDependencies": {
     "oxlint": "^1.63.0"
   },
-  "publishConfig": {
-    "provenance": true
-  },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "oxfmt": "^0.48.0",
     "oxlint": "^1.63.0"
   }
 }

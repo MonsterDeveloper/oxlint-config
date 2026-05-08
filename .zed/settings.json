@@ -1,10 +1,10 @@
 {
   "languages": {
     "JSON": {
-      "language_servers": ["!biome", "..."],
+      "language_servers": ["!biome", "..."]
     },
     "JSONC": {
-      "language_servers": ["!biome", "..."],
-    },
-  },
+      "language_servers": ["!biome", "..."]
+    }
+  }
 }
