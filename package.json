@@ -17,7 +17,8 @@
     "format": "oxfmt"
   },
   "publishConfig": {
-    "provenance": true
+    "provenance": true,
+    "access": "public"
   },
   "files": [
     "configs/**"
